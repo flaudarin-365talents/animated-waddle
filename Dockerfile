@@ -89,7 +89,7 @@ RUN set -ex \
     && curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python - 
 
 # Working directory
-RUN mkdir /working_dir
+RUN mkdir /working_dir /root/data-models /root/nltk_data
 
 WORKDIR /working_dir
 
